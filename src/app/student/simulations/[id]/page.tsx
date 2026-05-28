@@ -5,6 +5,48 @@ import { SimulationContainer } from "./SimulationContainer";
 export default async function SimulationDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
 
+  if (id === 'st1-1') {
+    const typedSimulation = {
+      id: 'st1-1',
+      title: 'Common problems with usability',
+      description: 'Identify everyday usability problems in digital interfaces.',
+      difficulty: 'Beginner',
+      xpReward: 100,
+      estimatedTime: '15 mins',
+      learningOutcome: 'Identify usability challenges in interface designs.',
+      frontendUrl: 'https://simulation-11.vercel.app/',
+    };
+    return <SimulationContainer simulation={typedSimulation} category="Module 1: Understanding User" />;
+  }
+
+  if (id === 'st1-2') {
+    const typedSimulation = {
+      id: 'st1-2',
+      title: 'Human Characteristics in Design',
+      description: 'Understand perception, memory, and cognitive load in user interface design.',
+      difficulty: 'Beginner',
+      xpReward: 100,
+      estimatedTime: '15 mins',
+      learningOutcome: 'Apply human cognitive characteristics to design interfaces.',
+      frontendUrl: 'https://simulation-12.vercel.app/',
+    };
+    return <SimulationContainer simulation={typedSimulation} category="Module 1: Understanding User" />;
+  }
+
+  if (id === 'st1-3') {
+    const typedSimulation = {
+      id: 'st1-3',
+      title: 'Human Considerations in Design',
+      description: 'Physical and psychological factors affecting interface use.',
+      difficulty: 'Beginner',
+      xpReward: 100,
+      estimatedTime: '15 mins',
+      learningOutcome: 'Apply physical and psychological factors to design interfaces.',
+      frontendUrl: 'https://simulation-13.vercel.app/',
+    };
+    return <SimulationContainer simulation={typedSimulation} category="Module 1: Understanding User" />;
+  }
+
   if (id === 'st2-1') {
     const typedSimulation = {
       id: 'st2-1',

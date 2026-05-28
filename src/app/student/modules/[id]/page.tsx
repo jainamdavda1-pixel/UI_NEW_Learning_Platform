@@ -113,7 +113,7 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ i
                     </Button>
                   )}
 
-                  {subtopic.id === 'st2-1' || subtopic.id === 'st2-2' || subtopic.id === 'st2-3' || subtopic.id === 'st2-4' ? (
+                  {subtopic.id === 'st1-1' || subtopic.id === 'st1-2' || subtopic.id === 'st1-3' || subtopic.id === 'st2-1' || subtopic.id === 'st2-2' || subtopic.id === 'st2-3' || subtopic.id === 'st2-4' ? (
                     <Link href={`/student/simulations/${subtopic.id}`}>
                       <Button variant="outline" className="bg-white hover:bg-zinc-50 border-zinc-200 text-sm font-bold h-11 px-6 shadow-sm">
                         <Gamepad2 className="w-5 h-5 mr-2 text-blue-600" /> View Simulation

@@ -27,5 +27,30 @@ npm run dev
 After running the command, open:
 
 http://localhost:3000
+6. Sign Up and View Student Dashboard
 
-Now you can see the project running in the browser.
+To view the Student Dashboard:
+
+Open the project in your browser.
+Click on Sign Up.
+Choose Continue with Google.
+Complete Google sign-up/login.
+After successful sign-up, you will be redirected to the Student Dashboard.
+
+From the student dashboard, you can explore modules, subtopics, simulations, quizzes, flashcards, progress, XP, badges, and other gamified learning features.
+
+7. Sign In and View Faculty Dashboard
+
+To view the Faculty Dashboard, use the following login credentials:
+
+Email ID: jainamdavda25@gmail.com
+Password: Jainam#123
+
+Steps:
+
+Open the project in your browser.
+Click on Sign In.
+Enter the above email ID and password.
+After successful login, you will be redirected to the Faculty Dashboard.
+
+From the faculty dashboard, faculty users can access features like managing modules, subtopics, simulations, quizzes, and student progress analysis.

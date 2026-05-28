@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Globe, Mail, Phone, MapPin } from "lucide-react";
+import { Globe, Mail, Phone, MapPin, GraduationCap } from "lucide-react";
 
 export function Footer() {
   return (
@@ -9,8 +9,8 @@ export function Footer() {
           {/* Logo & About */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center font-bold text-lg">
-                HCI
+              <div className="w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center">
+                <GraduationCap className="w-5 h-5" />
               </div>
               <span className="text-xl font-bold text-white">Gamified Learning Platform</span>
             </div>

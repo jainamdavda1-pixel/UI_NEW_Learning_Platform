@@ -25,7 +25,7 @@ export async function POST(req: Request) {
     }
 
     // Check if already completed to prevent double XP reward
-    const existingCompletion = await prisma.simulationAttempt.findFirst({
+    const existingCompletion = await prisma.simulationProgress.findFirst({
       where: {
         userId: user.id,
         simulationId,
@@ -37,7 +37,7 @@ export async function POST(req: Request) {
 
     const result = await prisma.$transaction(async (tx) => {
       // Create attempt
-      const attempt = await tx.simulationAttempt.create({
+      const attempt = await tx.simulationProgress.create({
         data: {
           userId: user.id,
           simulationId,

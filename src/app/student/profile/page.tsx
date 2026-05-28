@@ -32,7 +32,7 @@ export default async function StudentProfilePage() {
   });
 
   // Fetch simulation attempts
-  const simulationAttempts = await prisma.simulationAttempt.findMany({
+  const simulationAttempts = await prisma.simulationProgress.findMany({
     where: { userId: user.id },
     include: { simulation: { include: { module: true } } },
     orderBy: { createdAt: 'desc' }

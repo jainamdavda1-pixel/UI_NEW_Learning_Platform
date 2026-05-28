@@ -24,6 +24,7 @@ export default async function SimulationDetailPage({ params }: { params: Promise
     xpReward: simulation.xpReward,
     estimatedTime: simulation.estimatedTime,
     learningOutcome: simulation.learningOutcome,
+    frontendUrl: simulation.frontendUrl,
   };
 
   return <SimulationContainer simulation={typedSimulation} category={category} />;

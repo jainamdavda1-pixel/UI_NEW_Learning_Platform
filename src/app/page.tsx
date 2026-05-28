@@ -4,7 +4,7 @@ import { ModuleCard } from "@/components/cards/ModuleCard";
 import { SimulationCard } from "@/components/cards/SimulationCard";
 import { modules } from "@/data/modules";
 import { simulations } from "@/data/simulations";
-import { BookOpen, Gamepad2, Trophy, Flame, Target, Lightbulb, Users, GraduationCap, ChevronRight, BellRing } from "lucide-react";
+import { BookOpen, Gamepad2, Trophy, Flame, Target, Users, GraduationCap, ChevronRight, BellRing } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 export default function LandingPage() {
@@ -21,13 +21,13 @@ export default function LandingPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center space-y-8">
             <Badge className="bg-white/20 text-white hover:bg-white/30 px-4 py-1 text-sm mb-4 backdrop-blur-sm border-none">
-              New: Fall 2026 Semester Active
+              New: Interactive Learning Portal Active
             </Badge>
             <h1 className="text-5xl lg:text-7xl font-extrabold tracking-tight leading-tight">
-              Master HCI through <span className="text-amber-400">Gamified</span> Learning
+              Level Up Your Knowledge through <span className="text-amber-400">Gamified</span> Learning
             </h1>
             <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto font-medium">
-              A comprehensive platform dedicated to User Interface Design principles, interactive simulations, and competitive learning for engineering students.
+              An interactive educational experience featuring structured learning modules, hands-on virtual simulations, and friendly leaderboard competition.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
               <Link href="/sign-up">
@@ -37,7 +37,7 @@ export default function LandingPage() {
               </Link>
               <Link href="/student/modules">
                 <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10 font-bold px-8 h-14 text-lg bg-transparent">
-                  Explore Syllabus
+                  Explore Learning Paths
                 </Button>
               </Link>
             </div>
@@ -50,12 +50,12 @@ export default function LandingPage() {
         <div className="container mx-auto px-4">
           <div className="bg-white rounded-xl shadow-xl border border-zinc-100 p-8 grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-zinc-100">
             <div className="flex flex-col items-center text-center px-4">
-              <span className="text-4xl font-extrabold text-primary mb-2">5</span>
-              <span className="text-sm text-zinc-500 font-medium uppercase tracking-wider">Core Modules</span>
+              <span className="text-4xl font-extrabold text-primary mb-2">5+</span>
+              <span className="text-sm text-zinc-500 font-medium uppercase tracking-wider">Active Paths</span>
             </div>
             <div className="flex flex-col items-center text-center px-4">
               <span className="text-4xl font-extrabold text-primary mb-2">20+</span>
-              <span className="text-sm text-zinc-500 font-medium uppercase tracking-wider">Simulations</span>
+              <span className="text-sm text-zinc-500 font-medium uppercase tracking-wider">Interactive Simulators</span>
             </div>
             <div className="flex flex-col items-center text-center px-4">
               <span className="text-4xl font-extrabold text-primary mb-2">500+</span>
@@ -77,8 +77,10 @@ export default function LandingPage() {
               <BellRing className="w-5 h-5 text-blue-700" />
             </div>
             <div className="flex-1">
-              <h3 className="text-blue-900 font-semibold text-sm">What's New</h3>
-              <p className="text-blue-800 text-sm mt-1">Module 3 "Web Interface Design" simulations have been unlocked. Participate in the new "Inline Editing Simulator" to earn double XP this week!</p>
+              <h3 className="text-blue-900 font-semibold text-sm">Platform Announcement</h3>
+              <p className="text-blue-800 text-sm mt-1">
+                New interactive challenges and sandboxes have been unlocked. Maintain your daily streak to earn double XP on learning activities this week!
+              </p>
             </div>
           </div>
         </div>
@@ -91,7 +93,7 @@ export default function LandingPage() {
             <div>
               <Badge className="mb-2 bg-primary/10 text-primary hover:bg-primary/20 border-none">Curriculum</Badge>
               <h2 className="text-3xl font-bold text-zinc-900">Explore Learning Modules</h2>
-              <p className="text-zinc-500 mt-2">Comprehensive syllabus covering cognitive psychology to responsive layouts.</p>
+              <p className="text-zinc-500 mt-2">Comprehensive syllabus covering core subject chapters and resource materials.</p>
             </div>
             <Link href="/student/modules" className="hidden sm:flex items-center text-primary font-medium hover:underline">
               View all {modules.length} modules <ChevronRight className="w-4 h-4 ml-1" />
@@ -115,7 +117,7 @@ export default function LandingPage() {
             <div>
               <Badge className="mb-2 bg-primary/10 text-primary hover:bg-primary/20 border-none">Interactive</Badge>
               <h2 className="text-3xl font-bold text-zinc-900">Syllabus-based Simulations</h2>
-              <p className="text-zinc-500 mt-2">Learn by doing. Apply theoretical concepts in practical sandboxes.</p>
+              <p className="text-zinc-500 mt-2">Learn by doing. Apply theoretical concepts in virtual sandbox environments.</p>
             </div>
             <Link href="/student/simulations" className="hidden sm:flex items-center text-primary font-medium hover:underline">
               View all {simulations.length} simulations <ChevronRight className="w-4 h-4 ml-1" />
@@ -152,7 +154,7 @@ export default function LandingPage() {
                 <Trophy className="w-8 h-8" />
               </div>
               <h3 className="font-bold text-xl mb-2 text-zinc-800">Badges</h3>
-              <p className="text-zinc-500 text-sm">Unlock special achievements for mastering specific UI/UX topics.</p>
+              <p className="text-zinc-500 text-sm">Unlock special achievements for mastering specific learning topics.</p>
             </div>
             
             <div className="bg-white rounded-2xl p-6 text-center border border-zinc-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
@@ -160,7 +162,7 @@ export default function LandingPage() {
                 <Flame className="w-8 h-8" />
               </div>
               <h3 className="font-bold text-xl mb-2 text-zinc-800">Streaks</h3>
-              <p className="text-zinc-500 text-sm">Maintain a daily learning streak to multiply your XP gains.</p>
+              <p className="text-zinc-500 text-sm">Maintain a daily study streak to multiply your XP gains.</p>
             </div>
             
             <div className="bg-white rounded-2xl p-6 text-center border border-zinc-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
@@ -178,9 +180,9 @@ export default function LandingPage() {
       <section className="py-24 bg-zinc-900 text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-primary/20 blur-3xl rounded-full transform translate-x-1/3 -translate-y-1/4"></div>
         <div className="container mx-auto px-4 relative z-10 text-center max-w-3xl">
-          <GraduationCap className="w-16 h-16 mx-auto text-primary mb-6" />
-          <h2 className="text-4xl font-bold mb-6">Begin Your HCI Journey Today</h2>
-          <p className="text-xl text-zinc-300 mb-10">Join your peers in the most engaging way to learn User Interface Design and Human-Computer Interaction.</p>
+          <GraduationCap className="w-16 h-16 mx-auto text-primary mb-6 animate-pulse" />
+          <h2 className="text-4xl font-bold mb-6">Begin Your Learning Journey Today</h2>
+          <p className="text-xl text-zinc-300 mb-10">Join your peers in the most engaging way to study courses, solve assessments, and top the leaderboard.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/sign-up">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 h-14 text-lg">

@@ -16,6 +16,7 @@ interface SimulationContainerProps {
     xpReward: number;
     estimatedTime: string | null;
     learningOutcome: string | null;
+    frontendUrl?: string | null;
   };
   category: string;
 }
@@ -277,6 +278,37 @@ export function SimulationContainer({ simulation, category }: SimulationContaine
                   </Button>
                 </CardFooter>
               </Card>
+            </div>
+          </div>
+        ) : simulation.frontendUrl ? (
+          /* Deployed Frontend HTML Simulation Embedded in IFrame */
+          <div className="space-y-4">
+            <Card className="border border-zinc-200 shadow-lg overflow-hidden bg-white">
+              <div className="bg-zinc-800 text-zinc-300 px-4 py-2 text-xs font-mono flex items-center justify-between">
+                <span className="truncate">{simulation.frontendUrl}</span>
+                <div className="flex space-x-1.5 flex-shrink-0">
+                  <span className="w-2.5 h-2.5 rounded-full bg-red-500 block"></span>
+                  <span className="w-2.5 h-2.5 rounded-full bg-yellow-500 block"></span>
+                  <span className="w-2.5 h-2.5 rounded-full bg-green-500 block"></span>
+                </div>
+              </div>
+              <div className="relative w-full aspect-video bg-white">
+                <iframe 
+                  src={simulation.frontendUrl} 
+                  className="absolute inset-0 w-full h-full border-none"
+                  title={simulation.title}
+                  sandbox="allow-scripts allow-same-origin"
+                />
+              </div>
+            </Card>
+            <div className="flex justify-end pt-4">
+              <Button 
+                onClick={handleSubmitSimulation}
+                disabled={isSubmitting}
+                className="bg-primary hover:bg-primary/95 text-white font-bold px-8 shadow-md"
+              >
+                {isSubmitting ? "Submitting..." : "Complete & Submit Sandbox"}
+              </Button>
             </div>
           </div>
         ) : (

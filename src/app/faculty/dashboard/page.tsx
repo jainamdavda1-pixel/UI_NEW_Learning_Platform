@@ -19,7 +19,7 @@ export default async function FacultyDashboardPage() {
     include: { user: true, quiz: true }
   });
 
-  const recentSimAttempts = await prisma.simulationAttempt.findMany({
+  const recentSimAttempts = await prisma.simulationProgress.findMany({
     take: 5,
     orderBy: { createdAt: 'desc' },
     include: { user: true, simulation: true }

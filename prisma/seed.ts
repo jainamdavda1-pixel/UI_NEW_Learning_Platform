@@ -96,8 +96,8 @@ async function main() {
       subtopicNo: '2.1',
       title: 'Information Architecture and Application Structure',
       description: 'Organizing complex information.',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      notesUrl: 'https://drive.google.com/drive/folders/1abcDEfgHIJklMNoPQRstUVwxyZ123456'
+      videoUrl: 'https://www.youtube.com/watch?v=v39z0JPeIc8',
+      notesUrl: 'https://drive.google.com/drive/u/0/folders/16jCm_2GoBAWHiriapf8QgmLG27ILVGqW'
     },
     {
       id: 'st2-2',
@@ -105,8 +105,8 @@ async function main() {
       subtopicNo: '2.2',
       title: 'Navigation, Signposts and Wayfinding Patterns',
       description: 'Guiding users through applications.',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      notesUrl: 'https://drive.google.com/drive/folders/1abcDEfgHIJklMNoPQRstUVwxyZ123456'
+      videoUrl: 'https://www.youtube.com/watch?v=Vp77JWjjaiQ',
+      notesUrl: 'https://drive.google.com/drive/u/0/folders/1fkqLfPimRoJnS4Cam-CM4IT_nx1fag4f'
     },
     {
       id: 'st2-3',
@@ -114,54 +114,54 @@ async function main() {
       subtopicNo: '2.3',
       title: 'Layout of Page Element',
       description: 'Grids and visual hierarchy.',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      notesUrl: 'https://drive.google.com/drive/folders/1abcDEfgHIJklMNoPQRstUVwxyZ123456'
+      videoUrl: 'https://www.youtube.com/watch?v=b8pS6p5GScw',
+      notesUrl: 'https://drive.google.com/drive/u/0/folders/1MWLzK5UF774rm6_tb66ZhqKweJIH66vS'
     },
     {
       id: 'st2-4',
       moduleId: 'm2',
       subtopicNo: '2.4',
-      title: 'Arranging content in list',
+      title: 'Arranging Content in List',
       description: 'Displaying items effectively.',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      notesUrl: 'https://drive.google.com/drive/folders/1abcDEfgHIJklMNoPQRstUVwxyZ123456'
+      videoUrl: 'https://www.youtube.com/watch?v=7MjvBqlRzCY',
+      notesUrl: 'https://drive.google.com/drive/u/0/folders/1DJJpc-DXofQaGkljYL3V2V-TPEDLSBwk'
     },
     // Module 3 subtopics
     {
       id: 'st3-1',
       moduleId: 'm3',
       subtopicNo: '3.1',
-      title: 'In-Page Editing',
-      description: 'Single-Field, Multi-Field, Drag and Drop.',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      notesUrl: 'https://drive.google.com/drive/folders/1abcDEfgHIJklMNoPQRstUVwxyZ123456'
+      title: 'In-page editing, table edit, drag and drop',
+      description: 'Single-Field, Multi-Field, Drag and Drop editing.',
+      videoUrl: 'https://www.youtube.com/watch?v=xCrhKzyxp0M',
+      notesUrl: 'https://drive.google.com/drive/u/0/folders/118ICJl2vMPuRz2e1vNNjBgN9tiACVhNx'
     },
     {
       id: 'st3-2',
       moduleId: 'm3',
       subtopicNo: '3.2',
-      title: 'Contextual Tools, Overlays and Inlays',
+      title: 'Contextual tools, overlays and inlays',
       description: 'Providing tools without leaving context.',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      notesUrl: 'https://drive.google.com/drive/folders/1abcDEfgHIJklMNoPQRstUVwxyZ123456'
+      videoUrl: 'https://www.youtube.com/watch?v=xCrhKzyxp0M',
+      notesUrl: 'https://drive.google.com/drive/u/0/folders/1y53XWu9hy5nmmvE_NH7UG8R8kii9IoBU'
     },
     {
       id: 'st3-3',
       moduleId: 'm3',
       subtopicNo: '3.3',
-      title: 'Static and Dynamic Invitation, Transition Patterns',
-      description: 'Guiding user interactions.',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      notesUrl: 'https://drive.google.com/drive/folders/1abcDEfgHIJklMNoPQRstUVwxyZ123456'
+      title: 'Static/Dynamic invitation and transition patterns',
+      description: 'Guiding user interactions dynamically.',
+      videoUrl: 'https://www.youtube.com/watch?v=u6wPJifxvvw',
+      notesUrl: 'https://drive.google.com/drive/u/0/folders/1KY4vIaj4Ho1D0o-WZxMmyF6wHMCSQttv'
     },
     {
       id: 'st3-4',
       moduleId: 'm3',
       subtopicNo: '3.4',
-      title: 'Lookup and Feedback Patterns',
-      description: 'Search and system status.',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      notesUrl: 'https://drive.google.com/drive/folders/1abcDEfgHIJklMNoPQRstUVwxyZ123456'
+      title: 'Lookup and feedback patterns',
+      description: 'Search lookup and user confirmation patterns.',
+      videoUrl: 'https://www.youtube.com/watch?v=b7CxLVHMLOc',
+      notesUrl: 'https://drive.google.com/drive/u/0/folders/1igviPAsDq_ZLxHBEBoSRQIXFScNlaCAW'
     },
     // Module 4 subtopics
     {
@@ -169,73 +169,82 @@ async function main() {
       moduleId: 'm4',
       subtopicNo: '4.1',
       title: 'Patterns for actions and commands',
-      description: 'Buttons and menus.',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      notesUrl: 'https://drive.google.com/drive/folders/1abcDEfgHIJklMNoPQRstUVwxyZ123456'
+      description: 'Buttons, menus, and controls.',
+      videoUrl: 'https://www.youtube.com/watch?v=7MjvBqlRzCY',
+      notesUrl: 'https://drive.google.com/drive/u/0/folders/1ORA38UBpkVWnkRfefl695PSzf08-qOMv'
     },
     {
       id: 'st4-2',
       moduleId: 'm4',
       subtopicNo: '4.2',
-      title: 'Patterns for information graphics',
-      description: 'Datatips, Dynamic Queries.',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      notesUrl: 'https://drive.google.com/drive/folders/1abcDEfgHIJklMNoPQRstUVwxyZ123456'
+      title: 'Information graphics, overview plus detail, datatips, dynamic queries',
+      description: 'Data display patterns, detail tooltips.',
+      videoUrl: 'https://www.youtube.com/watch?v=b7CxLVHMLOc',
+      notesUrl: 'https://drive.google.com/drive/u/0/folders/1-kSrMtBpv4ivfnHVucqXyjyAbXaAdufV'
     },
     {
       id: 'st4-3',
       moduleId: 'm4',
       subtopicNo: '4.3',
-      title: 'Patterns with form design',
-      description: 'Forgiving Format, Input Hints.',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      notesUrl: 'https://drive.google.com/drive/folders/1abcDEfgHIJklMNoPQRstUVwxyZ123456'
+      title: 'Form design, input hints, prompts, autocomplete, password strength meter',
+      description: 'Form usability patterns and input validation.',
+      videoUrl: 'https://www.youtube.com/watch?v=xCrhKzyxp0M',
+      notesUrl: 'https://drive.google.com/drive/u/0/folders/14YVRR-lGVe8vcDZTkxv4XbYyLBXVT94Q'
     },
     {
       id: 'st4-4',
       moduleId: 'm4',
       subtopicNo: '4.4',
-      title: 'Pattern with social content production',
-      description: 'Editorial Mix, Repost and Comment.',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      notesUrl: 'https://drive.google.com/drive/folders/1abcDEfgHIJklMNoPQRstUVwxyZ123456'
+      title: 'Social content production patterns',
+      description: 'Review systems, comment inputs and sharing.',
+      videoUrl: 'https://www.youtube.com/watch?v=CBm9gdwshf8',
+      notesUrl: 'https://drive.google.com/drive/u/0/folders/1hEulwjiMSCC39-l_tsoHfArBFiislxQ8'
     },
     // Module 5 subtopics
     {
       id: 'st5-1',
       moduleId: 'm5',
       subtopicNo: '5.1',
-      title: 'Managing mobile component',
-      description: 'Vertical List, Carousel Grid.',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      notesUrl: 'https://drive.google.com/drive/folders/1abcDEfgHIJklMNoPQRstUVwxyZ123456'
+      title: 'Vertical list, infinite list, thumbnail list, carousel, slideshow',
+      description: 'Scroll lists and layout patterns on mobile.',
+      videoUrl: 'https://www.youtube.com/watch?v=dfy_8llodDE',
+      notesUrl: 'https://drive.google.com/drive/u/0/folders/1QFKiDc8dAo7BfulLJXi8ZV9oId8_feWe'
     },
     {
       id: 'st5-2',
       moduleId: 'm5',
       subtopicNo: '5.2',
-      title: 'Pattern for Lateral access and Drill down',
-      description: 'Tabs, Pagination, Button, Icon.',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      notesUrl: 'https://drive.google.com/drive/folders/1abcDEfgHIJklMNoPQRstUVwxyZ123456'
+      title: 'Tabs, pagination, drill down, button, indicator, icon',
+      description: 'Navigation mechanisms on mobile.',
+      videoUrl: 'https://www.youtube.com/watch?v=OZRczPw1BBw',
+      notesUrl: 'https://drive.google.com/drive/u/0/folders/1FKyAvjIXZtStZfbSbIT-6z3wDF2SfSM4'
     },
     {
       id: 'st5-3',
       moduleId: 'm5',
       subtopicNo: '5.3',
-      title: 'Pattern for Labels and Indicators',
-      description: 'Avatar, Wait Indicator, Reload.',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      notesUrl: 'https://drive.google.com/drive/folders/1abcDEfgHIJklMNoPQRstUVwxyZ123456'
+      title: 'Labels, indicators, tooltip, avatar, wait indicator, reload, sync, stop',
+      description: 'Status patterns and identifiers.',
+      videoUrl: 'https://www.youtube.com/watch?v=xCrhKzyxp0M',
+      notesUrl: 'https://drive.google.com/drive/u/0/folders/1RgHBHTyASelsilwZcIQR8swxpnshH1Fq'
     },
     {
       id: 'st5-4',
       moduleId: 'm5',
       subtopicNo: '5.4',
-      title: 'Patterns for Navigation',
-      description: 'Global Navigation, Secondary Actions.',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      notesUrl: 'https://drive.google.com/drive/folders/1abcDEfgHIJklMNoPQRstUVwxyZ123456'
+      title: 'Global navigation, contextual navigation, user interactions, secondary actions',
+      description: 'Global drawer structures and quick options.',
+      videoUrl: 'https://www.youtube.com/watch?v=PlSFEn97FgM',
+      notesUrl: 'https://drive.google.com/drive/u/0/folders/1v2aEYi5lH0UoodT_NpDWMdQ0dBJhg32z'
+    },
+    {
+      id: 'st5-5',
+      moduleId: 'm5',
+      subtopicNo: '5.5',
+      title: 'Mobile components and information display',
+      description: 'Information hierarchy and layout guidelines.',
+      videoUrl: 'https://www.youtube.com/watch?v=bTleDi-G8hE',
+      notesUrl: 'https://drive.google.com/drive/u/0/folders/1rJbz0TnIGmUb1m0JJowa0GfJjhyR0cHX'
     }
   ];
 

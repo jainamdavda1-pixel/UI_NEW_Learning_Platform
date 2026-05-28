@@ -4,7 +4,10 @@ import { prisma } from "@/lib/prisma";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ChevronLeft, PlayCircle, FileText, CheckCircle2 } from "lucide-react";
+import { ChevronLeft, PlayCircle, FileText, CheckCircle2, Gamepad2, Target } from "lucide-react";
+import { module1Quizzes } from "@/data/module1QuizData";
+import { module2Quizzes } from "@/data/module2QuizData";
+
 
 function getEmbedUrl(url: string | null | undefined): string | null {
   if (!url) return null;
@@ -35,7 +38,15 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ i
   const { id } = await params;
   const module = await prisma.module.findUnique({
     where: { id },
-    include: { subtopics: { orderBy: { subtopicNo: 'asc' } } }
+    include: {
+      subtopics: {
+        orderBy: { subtopicNo: 'asc' },
+        include: {
+          simulations: true,
+          quizzes: true
+        }
+      }
+    }
   });
 
   if (!module) {
@@ -89,21 +100,51 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ i
                 )}
 
                 {/* Buttons row directly under the video player */}
-                <div className="flex flex-wrap items-center gap-3 border-t border-zinc-100 pt-4 mt-auto">
+                <div className="flex flex-wrap items-center gap-4 border-t border-zinc-100 pt-5 mt-auto">
                   {subtopic.notesUrl ? (
                     <a href={subtopic.notesUrl} target="_blank" rel="noopener noreferrer">
-                      <Button variant="outline" size="sm" className="bg-white hover:bg-zinc-50 border-zinc-200 text-xs font-semibold h-9 px-4">
-                        <FileText className="w-4 h-4 mr-2 text-primary" /> Read Notes
+                      <Button variant="outline" className="bg-white hover:bg-zinc-50 border-zinc-200 text-sm font-bold h-11 px-6 shadow-sm">
+                        <FileText className="w-5 h-5 mr-2 text-primary" /> Read Notes
                       </Button>
                     </a>
                   ) : (
-                    <Button variant="outline" size="sm" className="bg-white hover:bg-zinc-50 border-zinc-200 text-xs font-semibold h-9 px-4" disabled>
-                      <FileText className="w-4 h-4 mr-2 text-zinc-300" /> Read Notes
+                    <Button variant="outline" className="bg-white hover:bg-zinc-50 border-zinc-200 text-sm font-bold h-11 px-6 shadow-sm" disabled>
+                      <FileText className="w-5 h-5 mr-2 text-zinc-300" /> Read Notes
+                    </Button>
+                  )}
+
+                  {subtopic.simulations && subtopic.simulations.length > 0 ? (
+                    <Link href={`/student/simulations/${subtopic.simulations[0].id}`}>
+                      <Button variant="outline" className="bg-white hover:bg-zinc-50 border-zinc-200 text-sm font-bold h-11 px-6 shadow-sm">
+                        <Gamepad2 className="w-5 h-5 mr-2 text-blue-600" /> View Simulation
+                      </Button>
+                    </Link>
+                  ) : (
+                    <Button variant="outline" className="bg-white hover:bg-zinc-50 border-zinc-200 text-sm font-bold h-11 px-6 shadow-sm" disabled>
+                      <Gamepad2 className="w-5 h-5 mr-2 text-zinc-300" /> View Simulation
+                    </Button>
+                  )}
+
+                  {subtopic.id in module1Quizzes || subtopic.id in module2Quizzes ? (
+                    <Link href={`/student/quizzes/${subtopic.id}`}>
+                      <Button variant="outline" className="bg-white hover:bg-zinc-50 border-zinc-200 text-sm font-bold h-11 px-6 shadow-sm">
+                        <Target className="w-5 h-5 mr-2 text-primary" /> Attempt Quiz
+                      </Button>
+                    </Link>
+                  ) : subtopic.quizzes && subtopic.quizzes.length > 0 ? (
+                    <Link href={`/student/quizzes/${subtopic.quizzes[0].id}`}>
+                      <Button variant="outline" className="bg-white hover:bg-zinc-50 border-zinc-200 text-sm font-bold h-11 px-6 shadow-sm">
+                        <Target className="w-5 h-5 mr-2 text-primary" /> Attempt Quiz
+                      </Button>
+                    </Link>
+                  ) : (
+                    <Button variant="outline" className="bg-white hover:bg-zinc-50 border-zinc-200 text-sm font-bold h-11 px-6 shadow-sm" disabled>
+                      <Target className="w-5 h-5 mr-2 text-zinc-300" /> Attempt Quiz
                     </Button>
                   )}
                   
-                  <Button variant="secondary" size="sm" className="ml-auto text-green-700 bg-green-50 hover:bg-green-100 text-xs font-semibold h-9 px-4">
-                    <CheckCircle2 className="w-4 h-4 mr-2" /> Mark Completed
+                  <Button variant="secondary" className="ml-auto text-green-750 bg-green-50 hover:bg-green-100 border border-green-200 text-sm font-bold h-11 px-6 shadow-sm">
+                    <CheckCircle2 className="w-5 h-5 mr-2 text-green-600" /> Mark Completed
                   </Button>
                 </div>
               </div>

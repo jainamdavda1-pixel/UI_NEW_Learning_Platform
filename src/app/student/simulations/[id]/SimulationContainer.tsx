@@ -111,7 +111,7 @@ export function SimulationContainer({ simulation, category }: SimulationContaine
 
   if (started) {
     return (
-      <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <div className={`container mx-auto px-4 py-8 ${simulation.frontendUrl ? 'max-w-7xl' : 'max-w-4xl'}`}>
         <div className="flex justify-between items-center mb-6">
           <div>
             <h1 className="text-2xl font-bold text-zinc-900">{simulation.title}</h1>
@@ -292,7 +292,7 @@ export function SimulationContainer({ simulation, category }: SimulationContaine
                   <span className="w-2.5 h-2.5 rounded-full bg-green-500 block"></span>
                 </div>
               </div>
-              <div className="relative w-full aspect-video bg-white">
+              <div className="relative w-full h-[650px] md:h-[800px] bg-white">
                 <iframe 
                   src={simulation.frontendUrl} 
                   className="absolute inset-0 w-full h-full border-none"
